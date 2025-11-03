@@ -12,7 +12,7 @@ const KakaoLoginComponent = () => {
   return (
     <>
         <Row className='mt-5'>
-            <p>로그인 시에 자동 가입처리 됩니다.</p>
+            <div>로그인 시에 자동 가입처리 됩니다.</div>
             <Button variant='warning' onClick={gokakao}>카카오 톡으로 로그인하기</Button>
         </Row>
     </>

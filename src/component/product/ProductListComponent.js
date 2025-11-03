@@ -42,7 +42,7 @@ const ProductListComponent = () => {
     <Container>
         <Row>
             {serverData.dtoList.map(product => 
-                <Col md={6} key={product.pno}>
+                <Col md={6}>
                     <Card className='mb-5'>
                         <Card.Img 
                         variant="top" 
@@ -52,9 +52,7 @@ const ProductListComponent = () => {
                         <Card.Body>
                             <Card.Title>{product.pname}</Card.Title>
                             <Card.Text>
-                                <div>NO : {product.pno}<br />
-                                    가격 : {product.price}<br />
-                                </div>
+                                NO : {product.pno} <br /> 가격 : {product.price}
                             </Card.Text>
                             <Button variant="outline-dark" onClick={() => goRead(product.pno)}>상세보기</Button>
                         </Card.Body>

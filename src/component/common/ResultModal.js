@@ -13,7 +13,7 @@ const ResultModal = ({title, content, callbackFn}) => {
         </Modal.Header>
 
         <Modal.Body>
-          <p>{content}</p>
+          <div>{content}</div>
         </Modal.Body>
 
         <Modal.Footer>
